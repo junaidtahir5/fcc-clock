@@ -86,6 +86,7 @@ function App() {
   }, [play, timeLeftSec, timeout]);
   
   return (
+  <div className="container d-flex justify-content-center align-items-center vh-100">
     <div className="wrapper">
       <h1>25 + 5 Clock by Junaid</h1>
       <div className="break-session-length">
@@ -124,6 +125,7 @@ function App() {
       preload="auto"
       src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
     />
+    </div>
     </div>
   );
 }
