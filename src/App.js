@@ -53,7 +53,7 @@ function App() {
     setSessionLength(25);
     setTimeType("SESSION");
     setTimeLeftSec(1500);
-    setPlay(false)
+    setPlay(false);
     clearTimeout(timeout);
     const audio = document.getElementById("beep");
     audio.pause();
@@ -65,7 +65,7 @@ function App() {
       setTimeLeftSec(breakLength * 60);
       setTimeType("BREAK");
       audio.play();
-    };
+    }
     if (!timeLeftSec && timeType === "BREAK") {
       setTimeLeftSec(sessionLength * 60);
       setTimeType("SESSION");
