@@ -76,7 +76,6 @@ function App() {
   };
   const clock = () => {
     if(play) {
-      (() => timeout);
       statusChange()
     } else {
       clearTimeout(timeout)
