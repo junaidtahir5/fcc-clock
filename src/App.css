@@ -1,8 +1,11 @@
-/* Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital@0;1&display=swap');
+body {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
 .wrapper {
-  
-    background-color: #f7f7f7;
-    border-radius: 5px;
+    background-color: #edebeb;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
@@ -13,9 +16,8 @@
   
   .break-session-length, .timer-wrapper {
     margin: 60px 0;
-   
   }
-  
+
   #break-length {
     padding:20px; 
    }
@@ -25,7 +27,9 @@
    #session-length {
     padding:20px; 
    }
-  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+  }
   h2 {
     color: #333;
     font-size: 24px;
@@ -36,6 +40,10 @@
     color: #666;
     font-size: 18px;
     margin-bottom: 10px;
+  }
+  #time-left {
+    font-size: 40px;
+    padding-bottom: 20px;
   }
   
   button {
@@ -58,13 +66,11 @@
     color: #333;
   }
   
-  /* Media Query for Responsiveness */
   @media (max-width: 768px) {
     .wrapper {
       max-width: 100%;
       padding: 10px;
     }
-  
     button {
       font-size: 16px;
     }

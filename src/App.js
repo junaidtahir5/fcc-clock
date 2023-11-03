@@ -93,7 +93,6 @@ function App() {
 
         <div>
           <h3 id="break-label">Break Length</h3>
-
           <div>
             <button disabled={play} onClick={handleBreakIncrease} id="break-increment">Increase</button>
             <strong id="break-length">{breakLength}</strong>
@@ -118,7 +117,7 @@ function App() {
           <h3 id="time-left">{timeFormatter()}</h3>
         </div>
         <button onClick={handlePlayButton} id="start_stop">Start/Stop</button>
-        <button disabled={play} onClick={handleReset} id="reset">Reset</button>
+        <button onClick={handleReset} id="reset">Reset</button>
       </div>
       <audio
       id="beep" 
